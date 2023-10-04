@@ -1,0 +1,76 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 100px auto;
+    animation-name: abc;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background: rgb(119, 31, 197);
+    margin: 100px auto;
+    animation-name: abc2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background: rgb(169, 197, 31);
+    
+    animation-name: abc3;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    background: rgb(203, 22, 131);
+    
+    animation-name: abc4;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes abc{
+    0%{
+       transform: rotateZ(0deg);
+    }
+    100%{
+         transform: rotateZ(360deg);
+    }
+}
+@keyframes abc2{
+    0%{
+       transform: rotateZ(0deg);
+    }
+    100%{
+         transform: rotateZ(360deg);
+    }
+}
+@keyframes abc3{
+    0%{
+       transform: translatex(0px);
+    }
+    100%{
+         transform: translate(400px);
+    }
+}
+@keyframes abc4{
+    0%{
+       transform: translatex(0px);
+    }
+    50%{
+        background:lightpink ;
+    }
+    100%{
+         transform: translate(400px);
+    }
+}
